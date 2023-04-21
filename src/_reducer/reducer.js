@@ -9,19 +9,19 @@ export const rootReducer = (oldState,action)=>{
           ...newState,
           value: newState.value + action.payload
         }
-        break;
+
       case SUBTRACTBYONE:
         return {
           ...newState,
           value: newState.value - action.payload
         }
-        break;
+        
       case RESET:
         return {
           ...newState,
           value: action.payload
         }
-        break;
+        
       default:
         return newState;
     }
